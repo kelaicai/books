@@ -1,3 +1,3 @@
 # books
 computer  secience
-some computer secience book
+some computer science book
