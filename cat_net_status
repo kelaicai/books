@@ -1,0 +1,5 @@
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+解读：
+^tcp =>取出tcp(开头)协议的记录
+使用S作为字典 取最后一列$NF的值，并对他们的值进行计数
+最后打印
